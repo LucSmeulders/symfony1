@@ -1,0 +1,25 @@
+<h1>Voorbeelden</h1>
+
+<h3>Basis Controller</h3>
+<ul>
+    <li>Basis controller die HTML terug geeft --- <a href="{{ path('app_lucky_number') }}">{{ path('app_lucky_number') }}</a></li>
+    <li>Basis controller die HTML terug geeft met dynamische string --- <a href="{{ path('app_lucky_number_random') }}">{{ path('app_lucky_number_random') }}</a></li>
+</ul>
+
+<h3>Controller met Twig templates</h3>
+<ul>
+    <li>Simpele HTML template --- <a href="{{ path('app_lucky_number_template') }}">{{ path('app_lucky_number_template') }}</a></li>
+    <li>Template met dynamische data --- <a href="{{ path('app_lucky_number_template_random') }}">{{ path('app_lucky_number_template_random') }}</a></li>
+    <li>If/Else Logica in de template --- <a href="{{ path('app_lucky_number_template_logic') }}">{{ path('app_lucky_number_template_logic') }}</a></li>
+    <li>For loop in de template  --- <a href="{{ path('app_lucky_number_template_more_numbers') }}">{{ path('app_lucky_number_template_more_numbers') }}</a></li>
+
+    <li>Route met dynamische parameter  --- <a href="{{ path('app_lucky_number_template_forced', {number: 7}) }}">{{ path('app_lucky_number_template_forced', {number: 7}) }}</a></li>
+    <li>Route met dynamische parameters  --- <a href="{{ path('app_lucky_number_template_forced_plus', {number: 7, secondNumber: 12}) }}">{{ path('app_lucky_number_template_forced_plus', {number: 7, secondNumber: 12}) }}</a></li>
+
+
+
+    <li>Include template in template  --- <a href="{{ path('app_lucky_number_template_includes') }}">{{ path('app_lucky_number_template_includes') }}</a></li>
+    <li>Extend base template  --- <a href="{{ path('app_lucky_number_template_extends') }}">{{ path('app_lucky_number_template_extends') }}</a></li>
+</ul>
+
+<h3><a href="{{ path('app_home') }}">Volledige website</a></h3>

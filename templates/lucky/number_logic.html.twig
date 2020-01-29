@@ -1,0 +1,10 @@
+<h1>Your random lucky number is {{ number }}</h1>
+<h1>Absolute value: {{ number | abs }}</h1>
+
+{% if number < -50 %}
+    Smaller than -50
+{% else %}
+    Bigger than -50
+{% endif %}
+
+{# Comments about the code #}

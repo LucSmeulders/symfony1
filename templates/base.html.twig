@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Our homepage!{% endblock %}</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        {{ include('_include_style.html.twig') }}
+    </head>
+
+    <body class="d-flex flex-column">
+
+        {{ include('_include_header.html.twig') }}
+
+        {{ include('_include_nav.html.twig') }}
+
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+
+        {{ include('_include_footer.html.twig') }}
+
+    </body>
+</html>

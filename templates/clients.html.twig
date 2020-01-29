@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Clients</h1>
+
+    <div class="row">
+    {% for client in clients %}
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3><a href="{{ path('app_client', {id: client.id}) }}">{{ client.name }}</a></h3>
+                    <p class="card-text">{{ client.description }}</p>
+                    <p class="card-text">Your score = {{ client.score }}</p>
+                    <a href="{{ path('app_updateclient', {id: client.id}) }}" class="btn btn-primary">Change</a>
+                    <a href="{{ path('app_deleteclient', {id: client.id}) }}" class="btn btn-primary">Delete</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+<nav class="nav justify-content-center" role="navigation">
+    <a class="nav-link {{ page == 'home'    ? 'btn-primary active' : '' }}" href="{{ path('app_home') }}">Home</a>
+    <a class="nav-link {{ page == 'clients' ? 'btn-primary active' : '' }}" href="{{ path('app_clients') }}">Clients</a>
+    <a class="nav-link {{ page == 'contact' ? 'btn-primary active' : '' }}" href="{{ path('app_contact') }}">Contact</a>
+    <a class="nav-link {{ page == 'clientnew' ? 'btn-primary active' : '' }}" href="{{ path('app_clientnew') }}">Nieuwe client</a>
+</nav>

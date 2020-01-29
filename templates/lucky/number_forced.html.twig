@@ -1,0 +1,8 @@
+<h1>Your random lucky number is {{ number }}</h1>
+
+<h3>In de URL kan je het getal veranderen!</h3>
+<ul>
+    <li><a href="{{ path('app_lucky_number_template_forced', {number: 7}) }}">{{ path('app_lucky_number_template_forced', {number: 7}) }}</a></li>
+    <li><a href="{{ path('app_lucky_number_template_forced', {number: 88}) }}">{{ path('app_lucky_number_template_forced', {number: 88}) }}</a></li>
+    <li><a href="{{ path('app_lucky_number_template_forced', {number: 15584}) }}">{{ path('app_lucky_number_template_forced', {number: 15584}) }}</a></li>
+</ul>

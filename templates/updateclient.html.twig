@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Update client</h1>
+    <form method="post" action="">
+        Naam:<br>
+        <input type="text" name="name" value={{ client.name }}><br>
+        Omschrijving:<br>
+        <input type="text" name="description" value="{{ client.description }}" ><br>
+        Score:<br>
+        <input type="number" name="score" value="{{ client.score }}"><br><br>
+        <input name="updated" type="hidden" value="YES"><br><br>
+        <input type="submit" value="Update" class="btn btn-primary">
+    </form>
+{% endblock %}

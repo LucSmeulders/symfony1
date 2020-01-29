@@ -1,0 +1,10 @@
+<h1>First number {{ number }}</h1>
+<h1>Second number {{ secondNumber }}</h1>
+<h1>{{ number }} + {{ secondNumber }} = {{ number + secondNumber }}</h1>
+
+<h3>In de URL kan je de getallen veranderen!</h3>
+<ul>
+    <li><a href="{{ path('app_lucky_number_template_forced_plus', {number: 7, secondNumber: 12}) }}">{{ path('app_lucky_number_template_forced_plus', {number: 7, secondNumber: 12}) }}</a></li>
+    <li><a href="{{ path('app_lucky_number_template_forced_plus', {number: 100, secondNumber: 900}) }}">{{ path('app_lucky_number_template_forced_plus', {number: 100, secondNumber: 900}) }}</a></li>
+    <li><a href="{{ path('app_lucky_number_template_forced_plus', {number: 5, secondNumber: 7}) }}">{{ path('app_lucky_number_template_forced_plus', {number: 5, secondNumber: 7}) }}</a></li>
+</ul>

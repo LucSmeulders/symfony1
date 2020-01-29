@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Nieuwe client</h1>
+    <form method="post" action="">
+        Naam:<br>
+        <input type="text" name="name" ><br>
+        Omschrijving:<br>
+        <input type="text" name="description" ><br>
+        Score:<br>
+        <input type="number" name="score" ><br><br>
+        <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+{% endblock %}

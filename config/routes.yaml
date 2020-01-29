@@ -1,0 +1,89 @@
+
+# Aparte voorbeeldjes
+# surfen naar /examples
+# routes staan in opbouwende volgorde
+
+app_examples:
+    path: /
+    controller: App\Controller\ExamplesController::index
+
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\LuckyController::number
+
+app_lucky_number_random:
+    path: /lucky/ramdom
+    controller: App\Controller\LuckyController::random
+
+
+
+app_lucky_number_template:
+    path: /lucky/number/template
+    controller: App\Controller\LuckyTemplateController::number
+
+app_lucky_number_template_random:
+    path: /lucky/number/template/random
+    controller: App\Controller\LuckyTemplateController::random
+
+app_lucky_number_template_logic:
+    path: /lucky/number/template/logic
+    controller: App\Controller\LuckyTemplateController::numberLogic
+
+app_lucky_number_template_forced:
+    path: /lucky/number/template/forced/{number}
+    controller: App\Controller\LuckyTemplateController::forced
+
+app_lucky_number_template_forced_plus:
+    path: /lucky/number/template/plus-{number}-{secondNumber}
+    controller: App\Controller\LuckyTemplateController::forcedPlus
+
+app_lucky_number_template_more_numbers:
+    path: /lucky/number/template/numbers
+    controller: App\Controller\LuckyTemplateController::moreNumbers
+
+app_lucky_number_template_includes:
+    path: /lucky/number/template/includes
+    controller: App\Controller\LuckyTemplateController::numberIncludes
+
+app_lucky_number_template_extends:
+    path: /lucky/number/template/extends
+    controller: App\Controller\LuckyTemplateController::numberExtends
+
+# Voorbeeld website
+
+app_home:
+    path: /home
+    controller: App\Controller\FullSiteController::home
+
+app_clients:
+    path: /clients
+    controller: App\Controller\FullSiteController::clients
+
+app_contact:
+    path: /contact
+    controller: App\Controller\FullSiteController::contact
+
+app_clientnew:
+    path: /clientnew
+    controller: App\Controller\FullSiteController::clientnew
+
+app_client:
+    path: /client/{id}
+    controller: App\Controller\FullSiteController::client
+
+app_updateclient:
+    path: /updateclient/{id}
+    controller: App\Controller\FullSiteController::updateclient
+
+app_deleteclient:
+    path: /deleteclient/{id}
+    controller: App\Controller\FullSiteController::deleteclient
+
+
+
+
+
+
+
+
+
